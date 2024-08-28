@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> geekify </title>
+
+
+    <style>
+                body {
+            margin: 0;
+            padding: 0;
+            color: #414141;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Top nav bar start */
+        .responsive-div {
+            padding: 12px 0 0 0;
+            margin: 10px 61px 0 56px;
+            border-radius: 5px;
+            background-color: #DAFEFF;
+        }
+
+        .get-started-bellow-large-img img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .responsive-table {
+            width: 100%;
+        }
+
+        .responsive-th {
+            padding: 19px 0;
+            width: 34%;
+            color: #fff;
+        }
+
+        .responsive-th img {
+            height: 70px;
+            width: 140px;
+        }
+
+        .responsive-th-right {
+            padding: 19px 0;
+            width: 32%;
+            text-align: right;
+            color: #000;
+        }
+
+        .responsive-th-right p {
+            margin: 23px;
+        }
+
+        .responsive-th-right p:last-child {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: -19px;
+            font-size: 23px;
+        }
+
+
+
+
+        /* bottom header-main text  Start*/
+        .bottom-header-div {
+            padding: 8px 30px 14px;
+            color: #fff;
+            font-family: Kameron;
+        }
+
+        .bottom-header-main-text {
+            font-size: 40px;
+            margin: 40px;
+        }
+
+        .bottom-header-div h3 {
+            margin-bottom: 5px;
+            margin-top: 30px;
+            line-height: 1px;
+            font-size: 22px;
+        }
+
+        .bottom-header-div h4 {
+            font-weight: 300;
+            font-size: 26px;
+            color: #414141;
+        }
+
+        .bottom-header-div p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .email-confirm-p-text {
+            font-size: 25px;
+            color: #414141;
+        }
+
+        .footer-div {
+            padding: 12px 0px 0px 0;
+            margin: 1px 15px 0 28px;
+            border-radius: 5px;
+        }
+
+        .footer-table {
+            width: 100%;
+        }
+
+        /* .our-service-table{
+            width: 100%;
+        } */
+        .footer-most-top-table {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+
+        }
+
+        .benefit-top-table {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            margin: 10px 40px;
+        }
+
+        .footer-most-top-table p {
+            font-weight: 200;
+            font-size: 15px;
+
+        }
+
+
+        .footer-th-most-top {
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        .footer-th {
+            padding: 9px 0;
+            width: 34%;
+            color: #fff;
+        }        
+
+        .footer-th p {
+            font-family: Kameron;
+            font-weight: 100;
+            font-size: 16px;
+        }
+
+        .footer-th-right {
+            padding: 0px 0;
+            width: 15%;
+            text-align: right;
+            color: #fff;
+        }
+
+        .footer-th-right h4 {
+            text-align: left;
+            margin: 5px 0 1px 0px;
+            font-size: 20px;
+            font-family: Kameron;
+        }
+
+        .footer-th-right ul {
+            margin: 0px 0 0px 16px;
+            padding: 0;
+        }
+
+
+        .footer-th-right li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .footer-th-right li:first-child {
+            margin-left: 1px;
+        }
+
+        .footer-th-right a img {
+            height: 15px;
+        }
+
+        .footer-th-right .small-img {
+            height: 15px;
+        }
+
+        .footer-th-right a {
+            color: #fff !important;
+        }
+
+        .footer-th-right h4 {
+            text-align: left;
+            margin: 5px 0px 14px 0px;
+            font-size: 25px;
+            font-family: Kameron;
+        }
+
+        .footer-th-right {
+            padding: 0px 0;
+            /* width: 20%; */
+            text-align: left;
+            color: #fff;
+        }
+
+        /* .our-service-th-left {
+            padding: 0px 0;
+            width: 40%;
+            text-align: left;
+            color: #fff;
+        } */
+
+        .btn-get-started {
+            /* background-color: #FB822F; */
+            background-image: linear-gradient(to bottom right, #f7a46e, #ff6600);
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-get-started:hover {
+            /* background-color: #4b2004; */
+            background: linear-gradient(45deg, #f03d10, #e43011);
+        }
+
+
+        /* benefits css  start*/
+
+
+        .benefit-top-table {
+            border-collapse: separate;
+            border-spacing: 0;
+
+        }
+
+        .benefit-th-card-text {
+            width: 30%;
+            /* background-color: #fff; */
+            background-image: linear-gradient(to bottom right, rgb(224, 218, 218), rgb(245, 237, 233));
+            color: #000;
+            text-align: center;
+            vertical-align: middle;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid rgb(236, 234, 234);
+            border-radius: 0;
+        }
+
+        .benefit-top-table th:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .benefit-top-table th:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .benefit-th-card-text img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .benefit-th-card-p-text{
+            font-size: 13px; 
+            font-weight: 400;
+        }
+        .benefit-th-card-p--title-text{
+            font-size: 23px; 
+            font-weight: 500;
+        }
+
+        /* benefits css end */
+
+
+        /* our service css start */
+
+
+        .our-service-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .our-service-th-left,
+        .our-service-th-right {
+            vertical-align: top;
+            padding: 10px;
+        }
+
+        .our-service-th-left img {
+            height: auto;
+        }
+
+
+
+        /* our service css end  */
+        /* for desktop size */
+        
+        @media  (max-width: 425px) {
+
+
+.get-started-bellow-large-img img {
+    width: 268px;
+    max-width: 100%;
+}
+
+.responsive-div {
+    margin: 10px 20px;
+}
+
+
+.responsive-th-right {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    display: block;
+}
+
+
+
+
+
+
+
+.responsive-th img {
+    height: 65px;
+    width: 153px;
+}
+
+.responsive-th-right p:last-child {
+    font-size: 24px;
+    margin: 0px 0px 25px 0;
+}
+
+.responsive-th-right p {
+    margin: 3px;
+    font-size: 20px;
+}
+
+
+
+/* benefits css start */
+
+.benefit-top-table {
+    display: block;
+}
+
+.benefit-th-card-text {
+    width: 100%;
+    display: block;
+}
+
+.benefit-top-table th {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.benefit-top-table th:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.benefit-top-table th:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+/* benefits css end */
+
+/* our service css start */
+
+/* .our-service-th-left th {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    display: block;
+}
+
+.our-service-table {
+    display: block;
+} */
+
+
+.our-service-th-right {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.our-service-th-left {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.our-service-th-left img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* our service css end */
+
+
+/* bottom header text  */
+.bottom-header-div {
+    padding: 8px 10px 14px;
+}
+
+.bottom-header-main-text {
+    font-size: 25px;
+}
+
+.bottom-header-div h3 {
+    font-size: 18px;
+}
+
+.bottom-header-div h4 {
+    font-size: 20px;
+}
+
+.bottom-header-div p {
+    font-size: 16px;
+}
+
+/*  footer most top section  css start */
+
+.footer-most-top-table p {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+
+
+/*  footer most top section  css end */
+
+
+/* Footer  */
+.footer-div {
+    margin: 1px 5px 0 5px;
+}
+
+.footer-th,
+.footer-th-right {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-th-right a img {
+    /* height: 20px; */
+}
+
+.footer-th-right .small-img {
+    height: 15px;
+}
+
+.footer-th-right h4 {
+    text-align: center;
+    margin: 5px 0px 14px 0px;
+    font-size: 25px;
+    font-family: Kameron;
+}
+
+.footer-th-right ul {
+    margin: 10px;
+    padding: 0;
+}
+
+
+}
+/* for large device */
+@media (min-width: 1280px) {
+    .bottom-header-main-text {
+        font-size: 50px;
+    }
+
+    .bottom-header-div h3 {
+        font-size: 28px;
+    }
+
+    .bottom-header-div h4 {
+        font-size: 30px;
+    }
+
+    .bottom-header-div p {
+        font-size: 24px;
+    }
+
+    .benefit-th-card-text {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .benefit-th-card-text img {
+        max-width: 100%;
+    }
+
+    .footer-th, .footer-th-right {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+
+    .our-service-th-right, .our-service-th-left {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .our-service-th-left img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-most-top-table p {
+        font-size: 18px;
+    }
+}
+
+/* for extra small device */
+@media (min-width: 320px) and (max-width: 480px) {
+    .bottom-header-main-text {
+        font-size: 22px;
+    }
+
+    .bottom-header-div h3 {
+        font-size: 16px;
+    }
+
+    .bottom-header-div h4 {
+        font-size: 18px;
+    }
+
+    .bottom-header-div p {
+        font-size: 14px;
+    }
+
+    .benefit-th-card-text {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .benefit-th-card-text img {
+        max-width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .footer-th, .footer-th-right {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .our-service-th-right, .our-service-th-left {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .our-service-th-left img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-most-top-table p {
+        font-size: 12px;
+    }
+}
+/* for tablet device */
+@media (max-width: 576px) {
+            .bottom-header-main-text {
+                font-size: 25px;
+            }
+
+            .bottom-header-div h3 {
+                font-size: 18px;
+            }
+
+            .bottom-header-div h4 {
+                font-size: 20px;
+            }
+
+            .bottom-header-div p {
+                font-size: 16px;
+            }
+
+            .benefit-th-card-text {
+                width: 100%;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .benefit-th-card-text img {
+                max-width: 80%;
+                margin-bottom: 10px;
+            }
+
+            .footer-th, .footer-th-right {
+                width: 100%;
+                text-align: center;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .our-service-th-right, .our-service-th-left {
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .our-service-th-left img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .bottom-header-div {
+                padding: 8px 10px 14px;
+            }
+        }
+
+
+@media (max-width: 768px) {
+    .bottom-header-main-text {
+        font-size: 2rem;
+    }
+
+    .bottom-header-div h3 {
+        font-size: 1.5rem;
+    }
+
+    .bottom-header-div h4 {
+        font-size: 1.75rem;
+    }
+
+    .bottom-header-div p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .bottom-header-main-text {
+        font-size: 1.875rem;
+    }
+
+    .bottom-header-div h3 {
+        font-size: 1.375rem;
+    }
+
+    .bottom-header-div h4 {
+        font-size: 1.625rem;
+    }
+
+    .bottom-header-div p {
+        font-size: 1rem;
+    }
+}
+
+
+/* for mobile device */
+        @media  (max-width: 425px) {
+
+
+            .get-started-bellow-large-img img {
+                width: 268px;
+                max-width: 100%;
+            }
+
+            .responsive-div {
+                margin: 10px 20px;
+            }
+
+
+            .responsive-th-right {
+                width: 100%;
+                text-align: center;
+                padding: 15px 0px 0px 0px;
+                display: block;
+            }
+
+
+
+
+
+
+
+            .responsive-th img {
+                height: 65px;
+                width: 153px;
+            }
+
+            .responsive-th-right p:last-child {
+                font-size: 24px;
+                margin: 0px 0px 25px 0;
+            }
+
+            .responsive-th-right p {
+                margin: 3px;
+                font-size: 20px;
+            }
+
+
+
+            /* benefits css start */
+
+            .benefit-top-table {
+                display: block;
+            }
+
+            .benefit-th-card-text {
+                width: 100%;
+                display: block;
+            }
+
+            .benefit-top-table th {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .benefit-top-table th:first-child {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .benefit-top-table th:last-child {
+                border-radius: 0 0 10px 10px;
+            }
+
+            /* benefits css end */
+
+            /* our service css start */
+
+            /* .our-service-th-left th {
+                width: 100%;
+                text-align: center;
+                padding: 15px 0px 0px 0px;
+                display: block;
+            }
+
+            .our-service-table {
+                display: block;
+            } */
+
+
+            .our-service-th-right {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+
+            .our-service-th-left {
+                display: block;
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .our-service-th-left img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+
+            /* our service css end */
+
+
+            /* bottom header text  */
+            .bottom-header-div {
+                padding: 8px 10px 14px;
+            }
+
+            .bottom-header-main-text {
+                font-size: 25px;
+            }
+
+            .bottom-header-div h3 {
+                font-size: 18px;
+            }
+
+            .bottom-header-div h4 {
+                font-size: 20px;
+            }
+
+            .bottom-header-div p {
+                font-size: 16px;
+            }
+
+            /*  footer most top section  css start */
+
+            .footer-most-top-table p {
+                font-weight: 200;
+                font-size: 13px;
+            }
+
+
+
+            /*  footer most top section  css end */
+
+
+            /* Footer  */
+            .footer-div {
+                margin: 1px 5px 0 5px;
+            }
+
+            .footer-th,
+            .footer-th-right {
+                width: 100%;
+                text-align: center;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .footer-th-right a img {
+                /* height: 20px; */
+            }
+
+            .footer-th-right .small-img {
+                height: 15px;
+            }
+
+            .footer-th-right h4 {
+                text-align: center;
+                margin: 5px 0px 14px 0px;
+                font-size: 25px;
+                font-family: Kameron;
+            }
+
+            .footer-th-right ul {
+                margin: 10px;
+                padding: 0;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <!-- geekify Email Tamplate  Start -->
+    <div style="background-color:#fff;color:#414141;margin:0">
+        <div style="background-color:#fff;max-width:700px;margin:0 auto">
+            <div style="margin-top:5px">
+                <div style="background-color:#fff;border:5px solid #fff">
+
+                    <div style="background-color:#FFF;margin-top:30px;text-align:center">
+                        <div style="background-color:#0F101D; padding-bottom: 12px;">
+
+                            <div class="responsive-div" style="background-color:#0F101D;">
+                                <div style="width:100%;text-align:center"><a href="{{default_website_url}}"
+                                        target="_blank"><img style="max-width:280px" src="images/main-logo.png "
+                                            alt="main logo "></a></div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="bottom-header-div"
+                            style="padding:50px 50px 0px 50px; background-color: #3A3C4B;  margin: 0px;">
+                            <h1 class="bottom-header-main-text">Elevate Your Email Experience with Our Expert Setup
+                                Services</span></h1>
+                            <p style="color: white;"> Boost your productivity, simplify your workflow, and impress your
+                                clients with our customized email setup</p>
+                            <button class="btn-get-started">Get Started Today</button>
+
+                            <div style=" margin-top: 20px;" class="get-started-bellow-large-img">
+                                <img src="images/get-started-bellow-large-img.png" alt="">
+                            </div>
+                        </div>
+                        <div
+                            style=" padding:50px 10px;  background-color: #ECECEC; font-size: 20px; font-weight: 600; margin: 0;">
+                            <div class="bottom-header-div">
+                                <h1 class="" style="font-weight: 500; font-size: 40px; font-family: Space Grotesk;">
+                                    <span style="color: black;">Benefits</span>
+                                </h1>
+
+                            </div>
+                            
+                            <table class="benefit-top-table">
+                                <tbody>
+                                    <tr>
+                                        <th class="benefit-th-card-text">
+                                            <div>
+                                                <img src="images/boost-productivity-small-img.png" alt="">
+                                            </div>
+                                            <p  class=" benefit-th-card-p--title-text">Boost <br> Productivity</p>
+                                            <p class=" benefit-th-card-p-text">Our expert setup services
+                                                ensure your email is tailored to your needs, saving you time and
+                                                increasing efficiency.</p>
+                                        </th>
+                                        <th class="benefit-th-card-text">
+                                            <div>
+                                                <img src="images/enhance-security-small-img.png" alt="">
+                                            </div>
+                                            <p  class=" benefit-th-card-p--title-text">Enhance <br> Security</p>
+                                            <p class=" benefit-th-card-p-text">Our team will set up robust
+                                                security measures to protect your data and prevent unauthorized access.
+                                            </p>
+                                        </th>
+                                        <th class="benefit-th-card-text">
+                                            <div>
+                                                <img src="images/improve-collaboration-small-img.png" alt="">
+                                            </div>
+                                            <p  class=" benefit-th-card-p--title-text">Improve <br> Collaboration</p>
+                                            <p  class=" benefit-th-card-p-text">Our customized email setup
+                                                will enable seamless communication and collaboration with your team and
+                                                clients.</p>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div style=" padding:50px 20px; background-color: #3A3C4B; font-size: 20px; font-weight: 600; margin: 0;"
+                            class="  ">
+
+                            <table class="our-service-table">
+                                <tbody>
+                                    <tr style="vertical-align: middle; text-align: left;">
+
+                                        <th class="our-service-th-left">
+                                            <div>
+                                                <img src="images/our-service-left-side-img.png" alt="">
+                                            </div>
+                                        </th>
+                                        <th class="our-service-th-right"
+                                            style="color:white; font-family: Space Grotesk; font-size: 16px; font-weight: 200;">
+                                            <div>
+                                                <p
+                                                    style="font-size: 35px; font-weight: 600; font-family: Space Grotesk;">
+                                                    Our Services
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    At Geeks CRS, we offer a range of email setup services designed to
+                                                    meet the unique needs of your business.
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Customised email setup for businesses of all sizes</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Email migration and transfer services</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Email security and spam protection</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Advanced email filtering and organization</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Integration with other business applications</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </th>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+
+                        <div style="  background-color: #ECECEC; font-size: 20px; font-weight: 600; margin: 0; padding: 30px 0 24px 0;"
+                            class="  ">
+                            <div>
+                                <img src="images/testimonial-img.png" alt="">
+                            </div>
+                            <div class="bottom-header-div">
+                                <h1 class="" style="font-weight: 500; font-size: 40px; font-family: Space Grotesk;">
+                                    <span style="color: black;">Testimonial</span>
+                                </h1>
+
+                            </div>
+                            <div class=""
+                                style=" color: #474747; width: 60%;margin: 0 auto; text-align: center; font-family: Space Grotesk; font-weight: 400;">
+                                <p>Don't just take our word for it! Our clients have seen significant improvements in
+                                    their email experience since working with us.</p>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div style="background-color:#0F101D;text-align:center;color:#fff; padding:15px 10px">
+                            <!-- footer  -->
+                            <div class="footer-div">
+                                <table class="footer-most-top-table ">
+
+
+                                    <tbody>
+                                        <tr style="vertical-align: middle; text-align: left;">
+                                            <th class="footer-th-most-top">
+                                                <p>Contact Information:
+
+                                                </p>
+                                            </th>
+                                            <th class="footer-th-most-top">
+                                                <p>1300 894 946 ,
+                                                </p>
+                                            </th>
+                                            <th class="footer-th-most-top">
+                                                <p>cs@geekify.au
+                                                </p>
+                                            </th>
+
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
+                                <hr style="  border: 1px solid rgb(243, 247, 243);
+                                        border-radius: 5px;
+                                        margin-right: 4%;
+                                        margin-left: 4%;
+                                        margin-top: 0px;
+                                        padding-left: 0px;">
+                                <table class="footer-table">
+                                    <tbody>
+                                        <tr style="vertical-align: middle; text-align: left;">
+                                            <th class="footer-th-right">
+
+                                                <div>
+                                                    <ul>
+                                                        <li><a href="https://www.facebook.com/kickassseniors"><img 
+                                                                    src="images/youtube-icon-1.png"
+                                                                    alt="facebook"></a></li>
+                                                        <!-- <li><a href="#"><img
+                                                            style="width: 19px; height: 19px;"
+                                                            src="images/ex-icon2.png"
+                                                                    alt="instagram"></a></li> -->
+                                                        <li><a
+                                                                href="https://www.linkedin.com/company/kick-ass-seniors/"><img
+                                                                
+                                                                src="images/insta-icon-3.png"
+                                                                    alt="linkedin"></a></li>
+                                                        <li><a href="#"><img
+                                                            
+                                                            src="images/fb-icon-4.png"
+                                                                    alt="youtube"></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </th>
+                                            <th class="footer-th">
+                                                <p>Ready to take your email experience to the next level? Contact us
+                                                    today to
+                                                    learn
+                                                    more about our email setup services!
+                                                </p>
+                                            </th>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- geekify Email Tamplate  End -->
+</body>
+
+</html>
